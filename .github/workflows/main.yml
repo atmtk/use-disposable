@@ -9,12 +9,12 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@0717577d45739eb3c851188b29f50ed6c0b2194e # v2
         name: Checkout [main]
         with:
           fetch-depth: 0
       - name: Setup node
-        uses: actions/setup-node@v3.5.1
+        uses: actions/setup-node@8c91899e586c5b171469028077307d293428b516 # v3.5.1
         with:
           node-version: 18.x
       - run: npm install
@@ -33,12 +33,12 @@ jobs:
         react: [18, rc]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@0717577d45739eb3c851188b29f50ed6c0b2194e # v2
         name: Checkout [main]
         with:
           fetch-depth: 0
       - name: Setup node
-        uses: actions/setup-node@v3.5.1
+        uses: actions/setup-node@8c91899e586c5b171469028077307d293428b516 # v3.5.1
         with:
           node-version: 18.x
       - run: npm install
@@ -54,12 +54,12 @@ jobs:
         react: [16, 17]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@0717577d45739eb3c851188b29f50ed6c0b2194e # v2
         name: Checkout [main]
         with:
           fetch-depth: 0
       - name: Setup node
-        uses: actions/setup-node@v3.5.1
+        uses: actions/setup-node@8c91899e586c5b171469028077307d293428b516 # v3.5.1
         with:
           node-version: 18.x
       - run: npm install
